@@ -1,6 +1,6 @@
 package Animal;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
 
@@ -9,25 +9,31 @@ public class Animal {
     public Animal(String Name)
     {
         this.name = Name;
-        System.out.println(Name);
     }
 
-    public void eat()
-    {
-        System.out.println(name+ "is Hungry");
-    }
-    public void makeNoise()
-    {
-        System.out.println(name+ "is Roaring");
-    }
+//    public void eat()
+//    {
+//        System.out.println(name+ " is Hungry");
+//    }
+
+    public abstract void eat();
+
+//    public void makeNoise()
+//    {
+//        System.out.println(name+ " is Roaring");
+//    }
+
+    public abstract void makeNoise();
     public void sleep()
     {
-        System.out.println(name+ " is Sleeping");
+        System.out.println(name+ " is Sleeping....😴");
     }
-    public void roam()
-    {
-        System.out.println(name+ " is roaming");
-    }
+//    public void roam()
+//    {
+//        System.out.println(name+ " is roaming");
+//    }
+
+    public abstract void roam();
 
     public void display()
     {
@@ -38,13 +44,12 @@ public class Animal {
         this.makeNoise();
     }
 
-    public void getName() {
-        System.out.println(name);
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
-
-
     }
+
 }
