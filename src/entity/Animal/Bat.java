@@ -1,6 +1,4 @@
-package Animal;
-
-import java.sql.SQLOutput;
+package entity.Animal;
 
 public class Bat extends Animal{
 

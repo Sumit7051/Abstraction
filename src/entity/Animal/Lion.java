@@ -1,4 +1,4 @@
-package Animal;
+package entity.Animal;
 
 public class Lion extends Animal{
     public Lion(String name) {

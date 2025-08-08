@@ -1,6 +1,6 @@
-package Birds;
+package entity.Birds;
 
-import Animal.Animal;
+import entity.Animal.Animal;
 
 public abstract class Bird extends Animal {
 
@@ -9,4 +9,5 @@ public abstract class Bird extends Animal {
     }
 
     public abstract void fly();
+
 }

@@ -1,6 +1,4 @@
-package Animal;
-
-import javax.lang.model.element.Name;
+package entity.Animal;
 
 public class Dog extends Animal {
 
