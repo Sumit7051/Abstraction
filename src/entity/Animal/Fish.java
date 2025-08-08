@@ -1,11 +1,9 @@
-package Animal;
+package entity.Animal;
 
-import javax.lang.model.element.Name;
-
-public class Fish extends Animal{
+public class Fish extends Animal implements Swim{
 
 
-    public Fish(String Name, String name) {
+    public Fish(String Name) {
         super(Name);
     }
 
@@ -27,5 +25,11 @@ public class Fish extends Animal{
     @Override
     public void roam() {
 
+
+    }
+
+    @Override
+    public void swimming() {
+        System.out.println(getName()+ " is swimming....");
     }
 }

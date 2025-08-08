@@ -1,8 +1,14 @@
-package Birds;
+package entity.Birds;
 
-public class Ostrich extends Bird {
+import entity.Animal.Flyable;
 
-    public Ostrich(String Name) {
+public class Parrot extends Bird implements Flyable {
+    @Override
+    public void chirp(String name, String address) {
+//        System.out.println(name+ "| " +address);
+    }
+
+    public Parrot(String Name) {
         super(Name);
     }
 
@@ -25,4 +31,10 @@ public class Ostrich extends Bird {
     public void roam() {
         System.out.println(getName()+ "is roaming....🏝️");
     }
+
+//    @Override
+    public void chirp() {
+        System.out.println(getName()+ " is Chirping...");
+    }
+
 }

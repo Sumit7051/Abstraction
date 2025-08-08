@@ -1,8 +1,8 @@
-package Birds;
+package entity.Birds;
 
-public class Parrot extends Bird{
+public class Ostrich extends Bird {
 
-    public Parrot(String Name) {
+    public Ostrich(String Name) {
         super(Name);
     }
 
